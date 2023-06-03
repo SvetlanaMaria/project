@@ -1,4 +1,3 @@
-pip install transformers
 import torch
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 from torch.utils.data import Dataset, DataLoader
@@ -19,31 +18,32 @@ class LyricsDataset(Dataset):
 
     def __getitem__(self, idx):
         lyrics = self.lyrics_data[idx]
-        if pd.isnull(lyrics):
-            lyrics = ""
-    # Encode the lyrics using the tokenizer
-        encoding = tokenizer.encode_plus(
-            lyrics,
-            add_special_tokens=True,
-            max_length=max_length,
-            padding='max_length',
-            truncation=True,
-            return_tensors='pt'
-        )
-
-        input_ids = encoding['input_ids'].squeeze()
-        attention_mask = encoding['attention_mask'].squeeze()
+        if pd.isnull(lyrics) or lyrics == "":
+            input_ids = torch.zeros(self.max_length, dtype=torch.long)
+            attention_mask = torch.zeros(self.max_length, dtype=torch.long)
+        else:
+            encoding = self.tokenizer.encode_plus(
+                lyrics,
+                add_special_tokens=True,
+                max_length=self.max_length,
+                padding='max_length',
+                truncation=True,
+                return_tensors='pt'
+            )
+            input_ids = encoding['input_ids'].squeeze()
+            attention_mask = encoding['attention_mask'].squeeze()
 
         return input_ids, attention_mask
 
 
 
 
-# Load the Genius Lyrics dataset from CSV files in the content folder
-folder_path = '/content'
+
+# Load the Genius Lyrics dataset from CSV files 
+folder_path = '/Users/svetlanakazakova/Downloads/archive-4'
 file_paths = [os.path.join(folder_path, file) for file in os.listdir(folder_path) if file.endswith('.csv')]
 
-# Preprocess the dataset to extract and clean the lyrics data
+# Preprocess the dataset 
 lyrics_data = []
 
 # Iterate over each file and extract the lyrics
@@ -72,15 +72,15 @@ max_length = 512
 num_epochs = 5
 learning_rate = 1e-4
 
-# Prepare the dataset for fine-tuning
+# Prepare the dataset 
 dataset = LyricsDataset(lyrics_data, tokenizer, max_length)
 dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
 
-# Prepare optimizer and loss function
+# optimizer and loss function
 optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
 criterion = torch.nn.CrossEntropyLoss()
 
-# Fine-tuning loop
+# Fine-tuning 
 model.train()
 for epoch in range(num_epochs):
     for batch in dataloader:
@@ -102,4 +102,3 @@ output = model.generate(input_ids, max_length=100, num_return_sequences=1)
 
 generated_lyrics = tokenizer.decode(output[0], skip_special_tokens=True)
 print("Generated lyrics:", generated_lyrics)
-
