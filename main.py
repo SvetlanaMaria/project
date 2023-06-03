@@ -6,6 +6,11 @@ import re
 import os
 import torch.nn.functional as F
 
+def clean_lyrics(lyrics):
+    if isinstance(lyrics, str):
+        lyrics = re.sub(r"[^a-zA-Z0-9\s]+", "", lyrics)  # Remove special characters
+        lyrics = lyrics.strip()  # Remove leading/trailing whitespaces
+    return lyrics
 
 class LyricsDataset(Dataset):
     def __init__(self, lyrics_data, tokenizer, max_length):
@@ -35,15 +40,11 @@ class LyricsDataset(Dataset):
 
         return input_ids, attention_mask
 
-
-
-
-
-# Load the Genius Lyrics dataset from CSV files 
-folder_path = '/Users/svetlanakazakova/Downloads/archive-4'
+# Load the Genius Lyrics dataset from CSV files
+folder_path = '/home/allthingsbarcelona/project/archive-4'
 file_paths = [os.path.join(folder_path, file) for file in os.listdir(folder_path) if file.endswith('.csv')]
 
-# Preprocess the dataset 
+# Preprocess the dataset
 lyrics_data = []
 
 # Iterate over each file and extract the lyrics
@@ -52,38 +53,38 @@ for file_path in file_paths:
     lyrics = df["lyrics"].tolist()
     
     # Remove special characters and symbols from the lyrics
-    def clean_lyrics(lyrics):
-        if isinstance(lyrics, str):
-            lyrics = re.sub(r"[^a-zA-Z0-9\s]+", "", lyrics)  # Remove special characters
-            lyrics = lyrics.strip()  # Remove leading/trailing whitespaces
-        return lyrics
-    
     lyrics = [clean_lyrics(lyric) for lyric in lyrics]
     lyrics_data.extend(lyrics)
+print("Total lyrics:", len(lyrics_data))
+print("Sample lyrics:")
+for i in range(min(5, len(lyrics_data))):
+    print(lyrics_data[i])
 # Load the pre-trained GPT-2 model and tokenizer
 model_name = 'gpt2'
 model = GPT2LMHeadModel.from_pretrained(model_name)
 tokenizer = GPT2Tokenizer.from_pretrained(model_name)
 tokenizer.pad_token = tokenizer.eos_token
 
-#hyperparameters
+# Hyperparameters
 batch_size = 4
 max_length = 512
 num_epochs = 5
 learning_rate = 1e-4
 
-# Prepare the dataset 
+# Prepare the dataset
 dataset = LyricsDataset(lyrics_data, tokenizer, max_length)
 dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
 
-# optimizer and loss function
+# Optimizer and loss function
 optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
 criterion = torch.nn.CrossEntropyLoss()
 
-# Fine-tuning 
+# Fine-tuning
 model.train()
+print("Training loop started")
+
 for epoch in range(num_epochs):
-    for batch in dataloader:
+    for batch_idx, batch in enumerate(dataloader):
         input_ids, attention_mask = batch
         optimizer.zero_grad()
         
@@ -92,11 +93,16 @@ for epoch in range(num_epochs):
         loss.backward()
         
         optimizer.step()
+
+        # Print the loss value for each batch
+        print(f"Epoch {epoch+1} - Batch {batch_idx+1}/{len(dataloader)} - Loss: {loss.item()}")
     
-    print(f"Epoch {epoch+1} completed. Loss: {loss.item()}")
+    # Print the average loss value for the epoch
+    print(f"Epoch {epoch+1} completed. Average Loss: {loss.item()}")
+
 # Generate lyrics using the fine-tuned model
 model.eval()
-prompt = "I wanna dance"
+prompt = "Let it be"
 input_ids = tokenizer.encode(prompt, add_special_tokens=True, return_tensors='pt')
 output = model.generate(input_ids, max_length=100, num_return_sequences=1)
 
