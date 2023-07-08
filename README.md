@@ -112,9 +112,10 @@ GPT-2 consists of a stack of transformer layers, including both an encoder and a
 
 <p align="middle">
   <a href="https://drive.google.com/uc?export=view&id=1phbpF208uCZM_w4tmRwuD0BA9IdGb68G">
-    <img src="https://drive.google.com/uc?export=view&id=1phbpF208uCZM_w4tmRwuD0BA9IdGb68G" alt="Image" style="width: auto; max-width: 50%; height: 80px; display: inline-block;" title="Image" />
+    <img src="https://drive.google.com/uc?export=view&id=1phbpF208uCZM_w4tmRwuD0BA9IdGb68G" alt="Image" style="width: 300px; height: 300px; display: inline-block;" title="Image" />
   </a>
 </p>
+
 <p align="right"><a href="#toc">To top</a></p>
 
 
