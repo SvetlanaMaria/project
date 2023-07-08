@@ -57,3 +57,14 @@ Our motivation for this project is driven by two main factors: the desire to exp
 * Suggestions for further improvement
 <p align="right"><a href="#toc">To top</a></p>
 
+### 1.3 Milestones <a name="milestones"></a>
+We have established the following key milestones:
+* Do a general research on the subject
+* Find suitable data sets
+* Define the main model archirecture
+* Preprocess the data and implement the model
+* Train the model
+* Analyse the obtained results and postprocess
+* Try a different model architecture (optional)
+* Make suggestions for further improvement
+<p align="right"><a href="#toc">To top</a></p>
