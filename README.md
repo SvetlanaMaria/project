@@ -10,12 +10,12 @@ and install the dependencies
 
 pip install -r requirements.txt
 
-# Lyrics Recognition using Deep Learning Techniques
+# Lyrics Generator
 
 Final project for the [UPC Postgraduate Course Artificial Intelligence with Deep Learning](https://www.talent.upc.edu/ing/estudis/formacio/curs/310400/postgraduate-course-artificial-intelligence-deep-learning/), edition Spring 2023
 
-Team: [Daniel Losada Molina], [Pau Rosell Civit], [Svetlana Kazakova]
+Team: Daniel Losada Molina, Pau Rosell Civit, Svetlana Kazakova]
 
 Advisor: [Dani Fojo]
 
-GitHub repository: [https://github.com/DanielLosada/Transformers---Lyrics-Generator] (https://github.com/DanielLosada/Transformers---Lyrics-Generator)
+GitHub repository: [https://github.com/DanielLosada/Transformers---Lyrics-Generator](https://github.com/DanielLosada/Transformers---Lyrics-Generator)
