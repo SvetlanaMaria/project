@@ -16,7 +16,7 @@ Final project for the [UPC Postgraduate Course Artificial Intelligence with Deep
 
 Team: Daniel Losada Molina, Pau Rosell Civit, Svetlana Kazakova
 
-Advisor: Dani Fojo
+Advisor: Daniel Fojo
 
 GitHub repository: [https://github.com/DanielLosada/Transformers---Lyrics-Generator](https://github.com/DanielLosada/Transformers---Lyrics-Generator)
 
