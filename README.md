@@ -91,6 +91,11 @@ We started out in [Google Colab](https://colab.research.google.com/) as it was f
     <img src="https://drive.google.com/uc?export=view&id=1jgmyVjKrc69KLUzmZw7j2BYIghZrDnZL" alt="Image" style="width: auto; max-width: 50%; height: 80px" title="Image" />
   </a>
 </p>
+<p align="middle">
+  <a href="https://drive.google.com/uc?export=view&id=1N2ui7rYVl6WPUAgzuMgFe7TU2c_MGm56">
+    <img src="https://drive.google.com/uc?export=view&id=1N2ui7rYVl6WPUAgzuMgFe7TU2c_MGm56" alt="Image" style="width: auto; max-width: 50%; height: 80px" title="Image" />
+  </a>
+</p>
 <p align="right"><a href="#toc">To top</a></p>
 
 
