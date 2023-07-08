@@ -43,5 +43,6 @@ GitHub repository: [https://github.com/DanielLosada/Transformers---Lyrics-Genera
 
 ## 1. Introduction <a name="intro"></a>
 Lyrics generation, the task of automatically generating song lyrics using deep learning techniques, has gained significant attention in recent years. With the advancements in natural language processing and deep learning, generating creative and coherent lyrics has become an intriguing but still a challenging task. This project aims to explore and address these challenges by leveraging state-of-the-art deep learning models and fine-tuning them on suitable datasets. 
+
 By analyzing the generated lyrics' quality, we can gain insights into the potential and limitations of deep learning models in the realm of lyrics generation.
 <p align="right"><a href="#toc">To top</a></p>
