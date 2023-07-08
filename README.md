@@ -51,3 +51,9 @@ By analyzing the generated lyrics' quality, we can gain insights into the potent
 Our motivation for this project is driven by two main factors: the desire to explore cutting-edge technologies and the fascination with the creative possibilities of lyrics generation. LLMs have shown impressive abilities in understanding and generating human-like text. By working on lyrics generation, we aim to dive deeper into these technologies and understand their potential for creative text generation.
 <p align="right"><a href="#toc">To top</a></p>
 
+### 1.2 Project Goals <a name="goals"></a>
+* Attempt to generate lyrics with GPT-2 and T5 based models
+* Analysis of the results
+* Suggestions for further improvement
+<p align="right"><a href="#toc">To top</a></p>
+
