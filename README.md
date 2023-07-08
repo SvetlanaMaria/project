@@ -68,3 +68,17 @@ We have established the following key milestones:
 * Try a different model architecture (optional)
 * Make suggestions for further improvement
 <p align="right"><a href="#toc">To top</a></p>
+
+## 2. Data Set <a name="dataset"></a>
+There are three primary methods for acquiring a dataset:
+
+1. Extracting data from websites using tools like BeautifulSoup or Scrapy.
+2. Utilizing the Genius API to gather data.
+3. Accessing pre-existing datasets from platforms like Kaggle or other similar sources.
+
+After trying all of them, we have opted for using datasets from Kaggle.
+We have chosen the following 2 datasets:
+* https://www.kaggle.com/datasets/mervedin/genius-lyrics
+* https://www.kaggle.com/datasets/neisse/scrapped-lyrics-from-6-genres
+
+<p align="right"><a href="#toc">To top</a></p>
