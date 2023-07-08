@@ -46,3 +46,8 @@ Lyrics generation, the task of automatically generating song lyrics using deep l
 
 By analyzing the generated lyrics' quality, we can gain insights into the potential and limitations of deep learning models in the realm of lyrics generation.
 <p align="right"><a href="#toc">To top</a></p>
+
+### 1.1 Motivation <a name="motivation"></a>
+Our motivation for this project is driven by two main factors: the desire to explore cutting-edge technologies and the fascination with the creative possibilities of lyrics generation. LLMs have shown impressive abilities in understanding and generating human-like text. By working on lyrics generation, we aim to dive deeper into these technologies and understand their potential for creative text generation.
+<p align="right"><a href="#toc">To top</a></p>
+
