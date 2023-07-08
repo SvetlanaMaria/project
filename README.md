@@ -98,7 +98,12 @@ We started out in [Google Colab](https://colab.research.google.com/) as it was f
   <a href="https://drive.google.com/uc?export=view&id=1LClGQxV6tDbLHU4dEowivvrehZPXnkHB">
     <img src="https://drive.google.com/uc?export=view&id=1LClGQxV6tDbLHU4dEowivvrehZPXnkHB" alt="Image" style="width: auto; max-width: 50%; height: 80px; display: inline-block;" title="Image" />
   </a>
+  
+  <a href="https://drive.google.com/uc?export=view&id=1gq6dYc2tmIJV2bvIZDrq2TaokTSYYm-j">
+    <img src="https://drive.google.com/uc?export=view&id=1gq6dYc2tmIJV2bvIZDrq2TaokTSYYm-j" alt="Image" style="width: auto; max-width: 50%; height: 80px; display: inline-block;" title="Image" />
+  </a>
 </p>
+
 
 <p align="right"><a href="#toc">To top</a></p>
 
