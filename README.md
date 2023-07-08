@@ -58,7 +58,7 @@ Our motivation for this project is driven by two main factors: the desire to exp
 We have established the following key milestones:
 * Do a general research on the subject
 * Find suitable data sets
-* Define the main model archirecture
+* Define the main model architecture
 * Preprocess the data and implement the model
 * Train the model
 * Analyse the obtained results and postprocess
