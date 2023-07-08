@@ -61,7 +61,7 @@ for i in range(min(5, len(lyrics_data))):
     print(lyrics_data[i])
 # Load the pre-trained GPT-2 model and tokenizer
 model_name = 'gpt2'
-model = GPT2LMHeadModel.from_pretrained(model_name)
+model = AutoModelForCausalLM.from_pretrained("t5-base").to(device)
 tokenizer = GPT2Tokenizer.from_pretrained(model_name)
 tokenizer.pad_token = tokenizer.eos_token
 
