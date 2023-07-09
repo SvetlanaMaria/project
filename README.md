@@ -31,7 +31,7 @@ GitHub repository: [https://github.com/DanielLosada/Transformers---Lyrics-Genera
 5. [Preprocessing the data set](#dataset_preprocess)
 6. [Results](#results)
     1. [Experiment 1: Single-artist training](#experiment_1)
-    2. [Experiment 2: One-genre training](#experiment_2)
+    2. [Experiment 2: Specific genre training](#experiment_2)
     3. [Experiment 3: Conditional lyrics generation](#experiment_3)
     4. [Experiment 4: T5 model](#experiment_4)
 7. [Conclusions](#conclusions)
@@ -123,4 +123,14 @@ Overall, the preprocessing steps involve:
 * tokenizing the datasets for further processing, setting a maximum context length 
 <p align="right"><a href="#toc">To top</a></p>
 
+## 6. Results <a name="results"></a>
+    
+### 6.1 Experiment 1: Single-artist training <a name="experiment_1"></a> 
+We trained on about 100 lyrics by a single artist (exact amount depending on the number of lyrics  available in the dataset).
+The main tendency that we observed is that the limitation in the size of the dataset led to overfitting. Experiments were conducted with different learning rate, all more or less leading to a similar result. 
+
+The problems that we encountered in the generated lyrics were also mostly due to the small size of the dataset - predisposition to word repetition and to generating truncated lines or lines consisting of one word. We tried to address this issue in post processing by introducing a __post_process function that cleans up the generated sequences of lyrics by removing redundant line breaks, and removes consecutive duplicated words using the __remove_consecutive_duplicates helper function.
+
+TODO: links to report (weights and biases or other)
+    
 
