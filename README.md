@@ -131,6 +131,6 @@ The main tendency that we observed is that the limitation in the size of the dat
 
 The problems that we encountered in the generated lyrics were also mostly due to the small size of the dataset - predisposition to word repetition and to generating truncated lines or lines consisting of one word. We tried to address this issue in post processing by introducing a __post_process function that cleans up the generated sequences of lyrics by removing redundant line breaks, and removes consecutive duplicated words using the __remove_consecutive_duplicates helper function.
 
-TODO: links to report (weights and biases or other)
+TODO: links to report/charts/screenshot of obtained resuts???? (weights and biases or other)
     
 
