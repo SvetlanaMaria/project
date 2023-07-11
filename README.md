@@ -158,7 +158,7 @@ In our experiment due to the lack of time and computing power we chose to train 
 The results observed were mainly similar to those we obtained with GPT-2 - overfitting and rather low quality of generated lyrics.
 
 <a href="https://drive.google.com/uc?export=view&id=1VdnrzFDsd-yFs99O8ujCDiWPRzJFdoow" align="left">
-  <img src="https://drive.google.com/uc?export=view&id=1VdnrzFDsd-yFs99O8ujCDiWPRzJFdoow" alt="Image" style="width: auto; max-width: 100%; height: 160px; display: inline-block;" title="Image" />
+  <img src="https://drive.google.com/uc?export=view&id=1VdnrzFDsd-yFs99O8ujCDiWPRzJFdoow" alt="Image" style="width: auto; max-width: 70%; height: auto; display: inline-block;" title="Image" />
 </a>
 
 
