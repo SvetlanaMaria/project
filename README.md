@@ -183,7 +183,7 @@ https://towardsdatascience.com/how-to-fine-tune-gpt-2-for-text-generation-ae2ea5
 
 https://www.youtube.com/watch?v=cHymMt1SQn8&ab_channel=NicholasRenotte
 
-https://snappishproductions.com/blog/2020/03/01/chapter-9.5-text-generation-with-gpt-2-and-only-pytorch
+https://snappishproductions.com/blog/2020/03/01/chapter-9.5-text-generation-with-gpt-2-and-only-pytorch.html.html
 
 https://huggingface.co
 
