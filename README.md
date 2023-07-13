@@ -180,8 +180,11 @@ After completing the project, several potential further steps for research and e
 
 ## 9. References <a name="references"></a>
 https://towardsdatascience.com/how-to-fine-tune-gpt-2-for-text-generation-ae2ea53bc272
+
 https://www.youtube.com/watch?v=cHymMt1SQn8&ab_channel=NicholasRenotte
+
 https://snappishproductions.com/blog/2020/03/01/chapter-9.5-text-generation-with-gpt-2-and-only-pytorch
+
 https://huggingface.co
 https://towardsdatascience.com/how-i-created-a-lyrics-generator-b62bde13badb
 https://www.aiweirdness.com/the-ais-carol-19-12-24/
