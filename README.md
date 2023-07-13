@@ -186,9 +186,15 @@ https://www.youtube.com/watch?v=cHymMt1SQn8&ab_channel=NicholasRenotte
 https://snappishproductions.com/blog/2020/03/01/chapter-9.5-text-generation-with-gpt-2-and-only-pytorch
 
 https://huggingface.co
+
 https://towardsdatascience.com/how-i-created-a-lyrics-generator-b62bde13badb
+
 https://www.aiweirdness.com/the-ais-carol-19-12-24/
+
 https://blog.ml6.eu/gpt-2-artificial-intelligence-song-generator-lets-get-groovy-3e7c1f55030f
+
 https://github.com/adigoryl/Styled-Lyrics-Generator-GPT2
+
 https://medium.com/mlearning-ai/artist-based-lyrics-generator-using-machine-learning-eb70dc4fb993
+
 https://elischolar.library.yale.edu/cgi/viewcontent.cgi?article=1000&context=yurj
