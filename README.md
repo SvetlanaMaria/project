@@ -152,25 +152,53 @@ TODO: links to report/charts/screenshots of obtained resuts???? (weights and bia
 
 ### 6.3 Experiment 3: Conditional lyrics generation with the same prompt <a name="experiment_3"></a>
 
+Experiment setup: Training with a full dataset to generate song lyrics similar to those of a specific artist. The dataset is Genius lyrics, and the artist and the prompt are determined by the arguments specified in argparse. Similarly to experiment 1, we use the same prompt for all the artists. Here we trained and tested on 5 artists: 50 Cent, Taylor Swift, Queen, Justin Bieber, and The Notorious B.I.G.. 
 
-Training with a full dataset to generate song lyrics similar to those of a specific artist. The dataset is Genius lyrics, and the artist and the prompt are determined by the arguments specified in argparse.
-* Input prompt: "You are"
-    * Artist: 50 Cent
-     ```
-    I'm not a person with money, I don't care if you gave me stuff, I don't care if you went out and stolen
-    I'm not a person with feelings, I'm a person that likes to drink
-    There's no way you were gonna give me crap
-     ```
+Hypothesis: Since we use the complete dataset, on more data the model should be even better fitted for lyrics generation in general. As for lyrics specific to a particular artist, though the model is fed with lyrics of a lot of different artists, we expect it to keep to the style and vocabulary of the chosen artist.
 
+Results: Here you can find some extracts of results that prove the hypothesis. W&B link: 
+* Input prompt: "I will"
+    * Artist: Taylor Swift
      ```
-    I'm not giving a fuckin' man a fuck, I ain't get no respect
-    But I did make my girl want sex, boy
-     
+    On top of the world
+    And then you'll get used to it
+    When my light shines on the stars
+    You'll still smell them the same burning from day to day
+    I'll send you in
+    On top of the world
+    And then you'll get used to it
+    When it's time to shine
      ```
-Results: Lyrics of enhanced quality and coherence (though there is still quite a bit of room for improvement).
-The main issue was again the lack of computational resources.
+    * Artist: Justin Bieber
+     ```
+    Come on D'you know all that I hold dear
+    I'll take a trip with you, baby girl, I will see you in the mirror
+    You know you are a big part of who I am
+     ```
+     ```
+     Let's go, D'you know all that I hold dear
+     I'll take it
+     Marry you babe, please, you know I'ma hold onto you all your life
+     (Oh-Oh!)
+     We'll make love, girl(Yeah)
+     It's been a long time since we last met
+     Still on the edge of love, we're sure it's real
+     ```
+    * Artist: The Notorious B.I.G.
+     ```
+     I'm not looking for drama anymore
+     There's a good reason I'm here
+     But then you find your way
+     And I try, but I don't show 'em
+     She don't wanna hear it
+     So it's gotta be slow
+     I mean, I am the slowest motherfucker I knew
 
-TODO: links to report/charts/screenshots of obtained resuts???? (weights and biases or other) 
+We can see that our results are similar to those of experiment 1, the lyrics stick to the style and the language of the chosen artist.
+However, we note that there is still quite a bit of room for improvement in terms of coherence of the lyrics.
+The main issue is the lack of computational resources to increase the dataset and/or further fine-tune the parameters.
+
+Here you can find mode examples with a different prompt:
 <p align="right"><a href="#toc">To top</a></p>
 
 ### 6.4 Experiment 4: T5 model <a name="experiment_4"></a>
