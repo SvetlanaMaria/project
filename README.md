@@ -102,16 +102,19 @@ We started out in [Google Colab](https://colab.research.google.com/) as it was f
 </p>
 <p align="right"><a href="#toc">To top</a></p>
 
-## 4. General Architecture <a name="architecture"></a>
+## 4. General Architecture and development <a name="architecture"></a>
 The development of advanced language models has brought significant changes to tasks like lyrics generation in natural language processing. These models, based on transformer architectures, have shown impressive skills in understanding and creating meaningful text that makes sense in different contexts. GPT, one of these models, has received a lot of attention because of its outstanding performance and flexibility. We have chosen to utilize GPT-2, which is the most recent version of the GPT models accessible on the Hugging Face platform.
 
-GPT-2 consists of a stack of transformer layers, including both an encoder and a decoder. The encoder processes the input text and extracts its contextual representation, while the decoder generates new text based on the learned representations. This architecture allows GPT-2 to effectively capture the relationships between words and generate coherent and contextually relevant text.
+GPT-2 consists of solely stacked decoder blocks from the transformer architecture. This architecture allows GPT-2 to effectively capture the relationships between words and generate coherent and contextually relevant text.
+
+The GPT-2 model was trained on a large corpus of text data that consisted of approximately 40 gigabytes of text (around 8 million tokens). The model has 1.5 billion parameters.
 
 <p align="left">
-  <a href="https://drive.google.com/uc?export=view&id=1phbpF208uCZM_w4tmRwuD0BA9IdGb68G">
-    <img src="https://drive.google.com/uc?export=view&id=1phbpF208uCZM_w4tmRwuD0BA9IdGb68G" alt="Image" style="width: 500px; height: 500px; display: inline-block;" title="Image" />
+  <a href="https://drive.google.com/uc?export=view&id=1ywV_aKn0qnO4IR9Bxmwqxw2Gt7lyehcg">
+    <img src="https://drive.google.com/uc?export=view&id=1ywV_aKn0qnO4IR9Bxmwqxw2Gt7lyehcg" alt="Image" style="width: 500px; height: 500px; display: inline-block;" title="Image" />
   </a>
 </p>
+
 <p align="right"><a href="#toc">To top</a></p>
 
 ## 5. Preprocessing the data set <a name="dataset_preprocess"></a>
