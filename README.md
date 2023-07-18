@@ -116,6 +116,7 @@ The GPT-2 model was trained on a large corpus of text data that consisted of app
 </p>
 
 For implementation we used the Hugging Face Transformers library. We initialized the language model using AutoModelForCausalLM. For tokenizing we utilized the AutoTokenizer class from the transformers library, which automatically selects the tokenizer associated with the specific pre-trained model you are using, ensuring compatibility between the model and tokenizer. 
+
 For training we created a data collator specifically for language modeling training using the DataCollatorForLanguageModeling class from the transformers library. The data collator is responsible for batching and preparing the input data during training.
 Then we instantiated the Trainer object from the same library with the model, training arguments, and datasets.
 The trainer trains the model using the trainer.train() method.
