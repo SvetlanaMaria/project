@@ -158,6 +158,7 @@ Hypothesis: Since we use the complete dataset, on more data the model should be 
 
 Results: Here you can find some extracts of results that prove the hypothesis. W&B link: 
 * Input prompt: "I will"
+  
     * Artist: Taylor Swift
      ```
     On top of the world
