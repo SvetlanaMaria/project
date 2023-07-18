@@ -150,8 +150,23 @@ At this stage is became more difficult to complete training with the computation
 TODO: links to report/charts/screenshots of obtained resuts???? (weights and biases or other)
 <p align="right"><a href="#toc">To top</a></p>
 
-### 6.3 Experiment 3: Conditional lyrics generation <a name="experiment_3"></a>
-Training with a full dataset to generate song lyrics similar to those of a specific artist. The dataset (one of the two available) and the artist are determined by arguments specified in argparse.
+### 6.3 Experiment 3: Conditional lyrics generation with the same prompt <a name="experiment_3"></a>
+
+
+Training with a full dataset to generate song lyrics similar to those of a specific artist. The dataset is Genius lyrics, and the artist and the prompt are determined by the arguments specified in argparse.
+* Input prompt: "You are"
+    * Artist: 50 Cent
+     ```
+    I'm not a person with money, I don't care if you gave me stuff, I don't care if you went out and stolen
+    I'm not a person with feelings, I'm a person that likes to drink
+    There's no way you were gonna give me crap
+     ```
+
+     ```
+    I'm not giving a fuckin' man a fuck, I ain't get no respect
+    But I did make my girl want sex, boy
+     
+     ```
 Results: Lyrics of enhanced quality and coherence (though there is still quite a bit of room for improvement).
 The main issue was again the lack of computational resources.
 
